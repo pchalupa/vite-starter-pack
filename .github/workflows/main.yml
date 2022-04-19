@@ -29,16 +29,16 @@ jobs:
             - run: npm ci
 
             - name: Run eslint
-              run: npm lint
+              run: npm run lint
 
             - name: Run stylelint
-              run: npm lint:css
+              run: npm run lint:css
 
             - name: Run type check
-              run: npm tsc:check
+              run: npm run tsc:check
 
             - name: Run unit tests
-              run: npm test:coverage
+              run: npm run test:coverage
 
             - uses: actions/upload-artifact@v3
               with:
