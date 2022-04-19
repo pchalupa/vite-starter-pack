@@ -14,29 +14,31 @@ jobs:
               with:
                   node-version: 'lts/*'
 
-            - id: yarn-cache-dir-path
-              run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
-
-            - uses: actions/cache@v3
+            - name: Cache node modules
+              uses: actions/cache@v3
+              env:
+                  cache-name: cache-node-modules
               with:
-                  path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-                  key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+                  path: ~/.npm
+                  key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
                   restore-keys: |
-                      ${{ runner.os }}-yarn-
+                      ${{ runner.os }}-build-${{ env.cache-name }}-
+                      ${{ runner.os }}-build-
+                      ${{ runner.os }}-
 
-            - run: yarn
+            - run: npm ci
 
             - name: Run eslint
-              run: yarn lint
+              run: npm lint
 
             - name: Run stylelint
-              run: yarn lint:css
+              run: npm lint:css
 
             - name: Run type check
-              run: yarn tsc:check
+              run: npm tsc:check
 
             - name: Run unit tests
-              run: yarn test:coverage
+              run: npm test:coverage
 
             - uses: actions/upload-artifact@v3
               with:
@@ -50,19 +52,21 @@ jobs:
         steps:
             - uses: actions/checkout@v3
 
-            - id: yarn-cache-dir-path
-              run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
-
-            - uses: actions/cache@v3
+            - name: Cache node modules
+              uses: actions/cache@v3
+              env:
+                  cache-name: cache-node-modules
               with:
-                  path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-                  key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+                  path: ~/.npm
+                  key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
                   restore-keys: |
-                      ${{ runner.os }}-yarn-
+                      ${{ runner.os }}-build-${{ env.cache-name }}-
+                      ${{ runner.os }}-build-
+                      ${{ runner.os }}-
 
-            - run: yarn
+            - run: npm ci
 
-            - run: yarn build
+            - run: npm run build
 
             - uses: actions/upload-artifact@v3
               with:

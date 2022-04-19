@@ -6,14 +6,14 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
-		"serve": "yarn build && vite preview",
+		"serve": "npm build && vite preview",
 		"lint": "eslint --ext .ts --ext .tsx",
 		"lint:css": "stylelint src/**/*.css",
 		"tsc:check": "tsc --noEmit",
 		"test": "vitest run --reporter verbose",
 		"test:watch": "vitest watch --reporter verbose",
-		"test:coverage": "yarn test -- --coverage",
-		"test:update": "yarn test -- --update",
+		"test:coverage": "npm test -- --coverage",
+		"test:update": "npm test -- --update",
 		"prepare": "is-ci || husky install"
 	},
 	"keywords": [

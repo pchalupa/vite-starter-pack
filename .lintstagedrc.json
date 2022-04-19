@@ -1,4 +1,4 @@
 {
-	"*.{ts,tsx}": "yarn lint",
-	"*.css": "yarn lint:css"
+	"*.{ts,tsx}": "npm lint",
+	"*.css": "npm lint:css"
 }
