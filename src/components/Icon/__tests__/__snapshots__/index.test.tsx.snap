@@ -1,103 +1,8 @@
 // Vitest Snapshot v1
 
-exports[`Icon > should render without issues cross icon 1`] = `
-<svg
-  class="_container_5sp71_1"
-  fill="none"
-  height="1em"
-  title="cross"
-  viewBox="0 0 14 14"
-  width="1em"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <path
-    clip-rule="evenodd"
-    d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z"
-    fill="black"
-    fill-rule="evenodd"
-  />
-</svg>
-`;
-
-exports[`Icon > should render without issues dropdown icon 1`] = `
-<svg
-  class="_container_5sp71_1"
-  fill="none"
-  height="1em"
-  title="dropdown"
-  viewBox="0 0 10 5"
-  width="1em"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <path
-    clip-rule="evenodd"
-    d="M0 0L5 5L10 0H0Z"
-    fill="#D9DCE1"
-    fill-rule="evenodd"
-  />
-</svg>
-`;
-
-exports[`Icon > should render without issues grid icon 1`] = `
-<svg
-  class="_container_5sp71_1"
-  fill="none"
-  height="1em"
-  title="grid"
-  viewBox="0 0 17 13"
-  width="1em"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <path
-    clip-rule="evenodd"
-    d="M0 6H5V0H0V6ZM0 13H5V7H0V13ZM6 13H11V7H6V13ZM12 13H17V7H12V13ZM6 6H11V0H6V6ZM12 0V6H17V0H12Z"
-    fill="#323C46"
-    fill-rule="evenodd"
-  />
-</svg>
-`;
-
-exports[`Icon > should render without issues list icon 1`] = `
-<svg
-  class="_container_5sp71_1"
-  fill="none"
-  height="1em"
-  title="list"
-  viewBox="0 0 17 13"
-  width="1em"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <path
-    clip-rule="evenodd"
-    d="M0 13H17V7H0V13ZM0 0V6H17V0H0Z"
-    fill="#D9DCE1"
-    fill-rule="evenodd"
-  />
-</svg>
-`;
-
-exports[`Icon > should render without issues logo icon 1`] = `
-<svg
-  class="_container_5sp71_1"
-  fill="none"
-  height="1em"
-  title="logo"
-  viewBox="0 0 29 28"
-  width="1em"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <path
-    clip-rule="evenodd"
-    d="M0.0780029 27V0.0579834H16.95V4.99798H5.322V11.154H15.848V15.828H5.322V22.06H16.95V27H0.0780029ZM21.548 23.808C21.548 22.8453 21.8837 22.0283 22.555 21.357C23.2263 20.6856 24.0433 20.35 25.006 20.35C25.4873 20.35 25.9433 20.4386 26.374 20.616C26.8047 20.7933 27.1783 21.0403 27.495 21.357C27.8117 21.6737 28.0587 22.041 28.236 22.459C28.4133 22.877 28.502 23.3266 28.502 23.808C28.502 24.2893 28.4133 24.739 28.236 25.157C28.0587 25.575 27.8117 25.9423 27.495 26.259C27.1783 26.5757 26.8047 26.8226 26.374 27C25.9433 27.1773 25.4873 27.266 25.006 27.266C24.0433 27.266 23.2263 26.9303 22.555 26.259C21.8837 25.5876 21.548 24.7707 21.548 23.808Z"
-    fill="#323C46"
-    fill-rule="evenodd"
-  />
-</svg>
-`;
-
 exports[`Icon > should render without issues stormtrooper icon 1`] = `
 <svg
-  class="_container_5sp71_1"
+  class="_container_1ims4_1"
   fill="none"
   height="1em"
   title="stormtrooper"
@@ -133,24 +38,5 @@ exports[`Icon > should render without issues stormtrooper icon 1`] = `
       fill="#1C4267"
     />
   </g>
-</svg>
-`;
-
-exports[`Icon > should render without issues user icon 1`] = `
-<svg
-  class="_container_5sp71_1"
-  fill="none"
-  height="1em"
-  title="user"
-  viewBox="0 0 24 24"
-  width="1em"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <path
-    clip-rule="evenodd"
-    d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z"
-    fill="#949EA8"
-    fill-rule="evenodd"
-  />
 </svg>
 `;
