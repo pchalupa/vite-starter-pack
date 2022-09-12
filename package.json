@@ -29,7 +29,7 @@
 		"i18next-http-backend": "^1.4.1",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
-		"react-i18next": "^11.18.5",
+		"react-i18next": "^11.18.6",
 		"react-router-dom": "^6.3.0",
 		"sanitize.css": "^13.0.0"
 	},
