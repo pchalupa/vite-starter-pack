@@ -49,7 +49,7 @@
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-config-xo": "^0.42.0",
 		"eslint-plugin-react": "^7.31.10",
-		"husky": "^8.0.1",
+		"husky": "^8.0.3",
 		"is-ci": "^3.0.1",
 		"jsdom": "^20.0.3",
 		"lint-staged": "^13.0.3",
