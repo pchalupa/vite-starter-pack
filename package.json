@@ -34,7 +34,7 @@
 		"sanitize.css": "^13.0.0"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^17.1.2",
+		"@commitlint/cli": "^17.4.2",
 		"@commitlint/config-conventional": "^17.3.0",
 		"@honkhonk/vite-plugin-svgr": "^1.1.0",
 		"@testing-library/react": "^13.4.0",
